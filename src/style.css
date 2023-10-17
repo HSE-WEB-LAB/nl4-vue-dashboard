@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layout{
+    position: relative;
+    padding-top: 140px;
+    padding-left: 220px;
+    background: #FAFBFC;
+
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.topBar{
+    position: absolute;
+    top: 0;
+    left: 200px;
+
+    height: 120px;
+    width: calc(100% - 200px);
+
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+
+    background-color: white;
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 50px 0;
+
+    background-color: white;
+
+    width: 200px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
