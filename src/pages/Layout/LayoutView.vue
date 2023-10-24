@@ -2,8 +2,10 @@
   <div class="layout">
     <top-bar />
     <side-bar/>
-    <router-view />
-    layout
+    <div class="layoutWrapper">
+      <router-view />
+    </div>
+
   </div>
 </template>
 

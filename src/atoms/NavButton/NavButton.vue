@@ -1,14 +1,18 @@
 <template>
   <button
     :class="'navButton' + (isActive ? ' active' : '')"
-    @click="$emit('clock')"
+    @click="$emit('click')"
+    class="sideBarButton"
   >
-    <div>
-      <div>
+    <div class="wrapper">
+      <div v-if="imgSrc">
         <img :src="imgSrc" alt="icon">
       </div>
 
-      <slot/>
+      <p class="buttonText">
+        <slot/>
+      </p>
+
     </div>
   </button>
 </template>
@@ -20,10 +24,10 @@ const {imgSrc, isActive} = defineProps({
   isActive: Boolean,
 })
 
-const emit = defineEmits(['clock'])
+const emit = defineEmits(['click']);
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 
 </style>
