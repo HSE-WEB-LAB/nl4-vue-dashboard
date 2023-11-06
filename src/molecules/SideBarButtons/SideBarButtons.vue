@@ -14,7 +14,7 @@
 <script setup>
 import NavButton from "@/atoms/NavButton/NavButton.vue";
 import {ref} from "vue";
-import router from "@/router";
+import router from "@/pages/router";
 
 const currentActive = ref(0)
 

@@ -4,7 +4,6 @@
       DASHBOARD
     </custom-title>
     <search-line v-model="searchString"/>
-    {{ searchString }}
   </div>
 </template>
 

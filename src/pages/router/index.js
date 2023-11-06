@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LayoutView from "../pages/Layout/LayoutView.vue";
+import LayoutView from "../Layout/LayoutView.vue";
+import DashboardView from "@/pages/Dashboard/DashboardView.vue";
 import MockPage from "@/pages/Mock/MockPage.vue";
 
 const routes = [
@@ -11,27 +12,27 @@ const routes = [
       {
         path: '',
         name: 'dashboard',
-        component: MockPage,
+        component: DashboardView,
       },
       {
         path: 'leaderboard',
         name: 'leaderboard',
-        component: LayoutView,
+        component: MockPage,
       },
       {
         path: 'order',
         name: 'order',
-        component: LayoutView,
+        component: MockPage,
       },
       {
         path: 'products',
         name: 'products',
-        component: LayoutView,
+        component: MockPage,
       },
       {
         path: 'sales-report',
         name: 'Sales Report',
-        component: LayoutView,
+        component: MockPage,
       },
     ]
   }
